@@ -1,0 +1,1017 @@
+{
+	"info": {
+		"_postman_id": "ebd93587-7c97-4cc4-b18a-10b26f3c83e8",
+		"name": "FunTree",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28312423"
+	},
+	"item": [
+		{
+			"name": "get forecast weather in {day}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/weather/forecast?location=Hanoi,  Vietnam&days=14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"weather",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Hanoi,  Vietnam"
+						},
+						{
+							"key": "days",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get forecast weather in {day}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/weather/forecast?location=Hanoi,  Vietnam&days=14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"weather",
+								"forecast"
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Hanoi,  Vietnam"
+								},
+								{
+									"key": "days",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f8-b3pfvcZadd3u39VLGVQDmSBbCrQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 05:08:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"forecastWeather\": {\n            \"humidity\": 94.13,\n            \"wind\": {\n                \"max\": {\n                    \"speed\": 2.07,\n                    \"direction\": 97.18\n                }\n            },\n            \"precipitation\": 3.08,\n            \"temperature\": {\n                \"min\": 17.71,\n                \"max\": 20.69,\n                \"afternoon\": 17.76,\n                \"night\": 18.5,\n                \"evening\": 18.47,\n                \"morning\": 18.37\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET current weather status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/weather/current?lat=21.0277644&lng=105.8341598",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"weather",
+						"current"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "21.0277644"
+						},
+						{
+							"key": "lng",
+							"value": "105.8341598"
+						}
+					]
+				},
+				"description": "Get weather at current location with given latitude and longitude"
+			},
+			"response": [
+				{
+					"name": "GET current weather status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/weather/current?lat=21.0277644&lng=105.8341598",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"weather",
+								"current"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "21.0277644"
+								},
+								{
+									"key": "lng",
+									"value": "105.8341598"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2825"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b09-DUT3E+HxPuKBD51ClayS9ifw448\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Mar 2024 15:15:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"airQuality\": {\n            \"aqi\": 102,\n            \"category\": \"Poor air quality\",\n            \"healthRecommendations\": {\n                \"generalPopulation\": \"Reduce the intensity of your outdoor activities. It is recommended to limit the time you are near busy roads, construction sites, open fires and other sources of smoke. Staying indoors with an activated air filtration system would be best for your long term health.\",\n                \"elderly\": \"The current level of air quality is likely to affect your health. You are advised to avoid intense activities outdoors and stay away from sources of pollution, such as busy roads, open fires and industrial sites. Staying indoors with an activated air filtration system would be best for your long term health.\",\n                \"lungDiseasePopulation\": \"The current level of air quality is likely to affect your health. As a precaution, keep relevant medication(s) available. You are advised to avoid intense activities outdoors and stay away from sources of pollution, such as busy roads, open fires and industrial sites. Staying indoors with an activated air filtration system would be best for your long term health.\",\n                \"heartDiseasePopulation\": \"The current level of air quality is likely to affect your health. As a precaution, keep relevant medication(s) available. You are advised to avoid intense activities outdoors and stay away from sources of pollution, such as busy roads, open fires and industrial sites. Staying indoors with an activated air filtration system would be best for your long term health.\",\n                \"athletes\": \"The current level of air quality is likely to affect your health. You are advised to avoid intense activities outdoors and stay away from sources of pollution, such as busy roads, open fires and industrial sites. Staying indoors with an activated air filtration system would be best for your long term health.\",\n                \"pregnantWomen\": \"The current level of air quality is likely to affect you and your baby's health. You are advised to avoid intense activities outdoors and stay away from sources of pollution, such as busy roads, open fires and industrial sites. Staying indoors with an activated air filtration system would be best for your long term health.\",\n                \"children\": \"The current level of air quality is likely to affect your health. You are advised to avoid intense activities outdoors and stay away from sources of pollution, such as busy roads, open fires and industrial sites. Staying indoors with an activated air filtration system would be best for your long term health.\"\n            }\n        },\n        \"weather\": {\n            \"dt\": 1709306102,\n            \"sunrise\": 1709248634,\n            \"sunset\": 1709290867,\n            \"temp\": 13.99,\n            \"feels_like\": 13.01,\n            \"pressure\": 1022,\n            \"humidity\": 60,\n            \"dew_point\": 6.36,\n            \"uvi\": 0,\n            \"clouds\": 100,\n            \"visibility\": 10000,\n            \"wind_speed\": 2.41,\n            \"wind_deg\": 40,\n            \"wind_gust\": 3.93,\n            \"weather\": [\n                {\n                    \"id\": 804,\n                    \"main\": \"Clouds\",\n                    \"description\": \"overcast clouds\",\n                    \"icon\": \"04n\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET AirQuality at given latitude and longitude",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"location\": {\n        \"latitude\": 21.0277644,\n        \"longitude\": 105.8341598\n    },\n    \"extraComputations\": [\"HEALTH_RECOMMENDATIONS\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://airquality.googleapis.com/v1/currentConditions:lookup?key=AIzaSyBa4N8OANkF4jxBHzhfqUPih8BwQWolw2Q",
+					"protocol": "https",
+					"host": [
+						"airquality",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"currentConditions:lookup"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyBa4N8OANkF4jxBHzhfqUPih8BwQWolw2Q"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET AirQuality at given latitude and longitude",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"location\": {\n        \"latitude\": 21.0277644,\n        \"longitude\": 105.8341598\n    },\n    \"extraComputations\": [\"HEALTH_RECOMMENDATIONS\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://airquality.googleapis.com/v1/currentConditions:lookup?key=AIzaSyBa4N8OANkF4jxBHzhfqUPih8BwQWolw2Q",
+							"protocol": "https",
+							"host": [
+								"airquality",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"v1",
+								"currentConditions:lookup"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "AIzaSyBa4N8OANkF4jxBHzhfqUPih8BwQWolw2Q"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "X-Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Referer"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 Feb 2024 19:02:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "ESF"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"dateTime\": \"2024-02-22T19:00:00Z\",\n    \"regionCode\": \"vn\",\n    \"indexes\": [\n        {\n            \"code\": \"uaqi\",\n            \"displayName\": \"Universal AQI\",\n            \"aqi\": 43,\n            \"aqiDisplay\": \"43\",\n            \"color\": {\n                \"red\": 1,\n                \"green\": 0.8392157\n            },\n            \"category\": \"Moderate air quality\",\n            \"dominantPollutant\": \"pm25\"\n        }\n    ],\n    \"healthRecommendations\": {\n        \"generalPopulation\": \"If you start to feel respiratory discomfort such as coughing or breathing difficulties, consider reducing the intensity of your outdoor activities. Try to limit the time you spend near busy roads, construction sites, open fires and other sources of smoke.\",\n        \"elderly\": \"Reduce the intensity of your outdoor activities. It is recommended to limit the time you are near busy roads, construction sites, open fires and other sources of smoke. Staying indoors with an activated air filtration system would be best for your long term health.\",\n        \"lungDiseasePopulation\": \"Reduce the intensity of your outdoor activities. Keep relevant medication(s) available and consult a doctor with any questions. It is recommended to limit the time you are near busy roads, open fires and other sources of smoke. In addition, consider reducing the time you spend near industrial emission stacks. Staying indoors with an activated air filtration system would be best for your long term health.\",\n        \"heartDiseasePopulation\": \"Reduce the intensity of your outdoor activities. Keep relevant medication(s) available and consult a doctor with any questions. It is recommended to limit the time you are near busy roads, construction sites, open fires and other sources of smoke. In addition, consider reducing the time you spend near industrial emission stacks. Staying indoors with an activated air filtration system would be best for your long term health.\",\n        \"athletes\": \"Reduce the intensity of your outdoor activities. It is recommended to limit the time you are near busy roads, construction sites, open fires and other sources of smoke. In addition, consider reducing the time you spend near industrial emission stacks. Staying indoors with an activated air filtration system would be best for your long term health.\",\n        \"pregnantWomen\": \"To keep you and your baby healthy, reduce the intensity of your outdoor activities. It is recommended to limit the time you are near busy roads, construction sites, open fires and other sources of smoke. Staying indoors with an activated air filtration system would be best for your long term health.\",\n        \"children\": \"Reduce the intensity of your outdoor activities. It is recommended to limit the time you are near busy roads, construction sites, open fires and other sources of smoke. Staying indoors with an activated air filtration system would be best for your long term health.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Chat with Gemini",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"prompt\": \"Ok, so tell me how to make fertilizer from wasted food?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/gemini/chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"gemini",
+						"chat"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Chat with Gemini",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"prompt\": \"Ok, so tell me how to make fertilizer from wasted food?\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/gemini/chat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gemini",
+								"chat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2557"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9fd-XyJJmA1zdDdG0+OQjz5b3E44pxc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 05:02:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"response\": \"1. **Gather Wasted Food:** Collect food scraps, leftovers, and trimmings from your kitchen and garden. This can include fruits, vegetables, egg shells, and coffee grounds. Avoid oily or meat products, as these can attract pests and make the compost smelly.\\n\\n\\n2. **Chop or Grind Food Scraps:** Cut larger scraps into smaller pieces or use a food processor or blender to grind them. Smaller pieces will break down more easily during the composting process.\\n\\n\\n3. **Choose a Composting Method:** There are various composting methods to choose from, depending on your available space and preferences. Some popular options include:\\n   - **Compost Bin:** A compost bin is a container designed specifically for composting. It helps contain the compost material and allows for proper aeration and drainage.\\n   - **Compost Pile:** If you have a garden, you can create a compost pile by layering food scraps with other organic materials such as leaves, grass clippings, and cardboard.\\n   - **Vermicomposting:** Vermicomposting involves using worms to break down organic material. It's a great option for indoor composting or small spaces.\\n\\n\\n4. **Combine Food Scraps with Other Materials:** To ensure a balanced compost, mix your food scraps with other organic materials such as dry leaves, straw, wood chips, or cardboard. These materials provide carbon, which helps balance the nitrogen content from the food scraps and promotes decomposition.\\n\\n\\n5. **Maintain the Compost:** Turn or aerate the compost regularly to allow oxygen to circulate and help the decomposition process. Keep the compost moist but not soggy. You can add water if it becomes too dry or cover it with a tarp to prevent excessive rain from making it too wet.\\n\\n\\n6. **Monitor Temperature:** The ideal temperature range for composting is between 130°F (55°C) and 150°F (65°C). This range allows beneficial microorganisms to thrive and break down the organic matter effectively.\\n\\n\\n7. **Wait for Decomposition:** Composting takes time, depending on the compost method and the temperature. It can take anywhere from a few weeks to several months for the compost to fully decompose and mature.\\n\\n\\n8. **Use Mature Compost:** Once the compost has a dark, crumbly texture and a pleasant earthy smell, it is ready to use. Use it as a soil amendment in your garden or flower beds to improve soil structure and fertility. Compost helps retain moisture, promotes healthy plant growth, and reduces the need for chemical fertilizers.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get gemini chat history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/gemini/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"gemini",
+						"history"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get gemini chat history",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/gemini/history",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gemini",
+								"history"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2451"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"993-PAU7bqzqHxBmIWH4yQMFMox4NZk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 05:01:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"history\": [\n            {\n                \"role\": \"user\",\n                \"parts\": [\n                    {\n                        \"text\": \"How can i create fertilizer?\"\n                    }\n                ]\n            },\n            {\n                \"role\": \"model\",\n                \"parts\": [\n                    {\n                        \"text\": \"1. **Gather Organic Materials:**\\n    - Food scraps: Fruit and vegetable scraps, egg shells, and coffee grounds.\\n    - Paper products: Cardboard, newspapers, and paper towels.\\n    - Garden waste: Leaves, grass clippings, and weeds.\\n    - Manure: Animal manure from cows, horses, chickens, and rabbits.\\n\\n2. **Select a Composting Method:**\\n    - Compost Pile: Build a compost pile in a designated area of your garden or yard.\\n    - Compost Bin: Purchase a compost bin or build your own.\\n    - Vermicomposting: Use a worm bin to compost inside your home or apartment.\\n\\n3. **Layer the Materials:**\\n    - Start with a layer of brown materials (paper or dried leaves) at the bottom of your compost pile or bin.\\n    - Add a layer of green materials (food scraps, grass clippings) on top.\\n    - Repeat the layering process, alternating between brown and green materials.\\n\\n4. **Turn the Compost Regularly:**\\n    - Every few weeks, turn the compost pile or bin with a garden fork or compost aerator to mix the materials and introduce oxygen.\\n    - Proper aeration helps the composting process and prevents the compost from becoming anaerobic (smelly and ineffective).\\n\\n5. **Maintain Moisture:**\\n    - Keep the compost moist by watering it regularly, especially during dry periods.\\n    - Avoid overwatering, as too much moisture can lead to rotting and anaerobic conditions.\\n\\n6. **Cover the Compost:**\\n    - Cover the compost pile or bin with a tarp or lid to retain moisture and prevent pests from accessing the compost.\\n\\n7. **Wait and Monitor:**\\n    - Composting can take anywhere from a few weeks to several months, depending on the materials used and the climate.\\n    - Monitor the compost regularly and turn it as needed.\\n\\n8. **Harvesting the Compost:**\\n    - Once the compost is dark, crumbly, and has a sweet earthy smell, it is ready to use.\\n    - Harvest the compost by shoveling it out of the pile or bin.\\n    - Store the compost in a dry, covered container until you are ready to use it in your garden.\\n\\n9. **Using the Compost:**\\n    - Mix compost into your garden soil to improve its structure and fertility.\\n    - Use compost as a top dressing for lawns, potted plants, and flowerbeds.\\n    - Compost can also be used as a soil amendment for indoor plants.\"\n                    }\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Fertilizer Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/care/fertilizing?temperature=30&aqi=115&plant_name=Snake Plant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"care",
+						"fertilizing"
+					],
+					"query": [
+						{
+							"key": "temperature",
+							"value": "30"
+						},
+						{
+							"key": "aqi",
+							"value": "115"
+						},
+						{
+							"key": "plant_name",
+							"value": "Snake Plant"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fertilizer Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/care/fertilizing?temperature=30&aqi=115&plant_name=Snake Plant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"care",
+								"fertilizing"
+							],
+							"query": [
+								{
+									"key": "temperature",
+									"value": "30"
+								},
+								{
+									"key": "aqi",
+									"value": "115"
+								},
+								{
+									"key": "plant_name",
+									"value": "Snake Plant"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-e1xNHziGOFda4Y5DfuGGVlXlmcU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 05:01:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"fertilizer_amount\": 23\n}"
+				}
+			]
+		},
+		{
+			"name": "Watering Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/care/watering?temperature=30&aqi=115",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"care",
+						"watering"
+					],
+					"query": [
+						{
+							"key": "temperature",
+							"value": "30"
+						},
+						{
+							"key": "aqi",
+							"value": "115"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Watering Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/care/watering?temperature=30&aqi=115",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"care",
+								"watering"
+							],
+							"query": [
+								{
+									"key": "temperature",
+									"value": "30"
+								},
+								{
+									"key": "aqi",
+									"value": "115"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"44-FArpcCA/HhYEgL10PQbABBZMF3E\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Feb 2024 04:53:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"water_amount\": 1183120.845471037,\n    \"next_watering_date\": \"2024-03-01\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Plants identification % health assessment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Api-AKey",
+						"value": "OXhL5S1drb9NVqmORt5HeCvdf5CA6dYDWiugGbo83QQ9TzTD9Y",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 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",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "images",
+							"type": "file",
+							"src": "/Users/anhson/Documents/Projects/FunTree/server/uploads/Bottle Image 185072125.jpg"
+						},
+						{
+							"key": "lat",
+							"value": "21.0277644",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "105.8341598",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/plant/identification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"plant",
+						"identification"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Plant Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Api-AKey",
+								"value": "OXhL5S1drb9NVqmORt5HeCvdf5CA6dYDWiugGbo83QQ9TzTD9Y",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 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",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/Users/anhson/Documents/Projects/FunTree/server/uploads/pic plant search.png"
+								},
+								{
+									"key": "lat",
+									"value": "21.0277644",
+									"type": "text"
+								},
+								{
+									"key": "lng",
+									"value": "105.8341598",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/plant/identification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"plant",
+								"identification"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5671"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1627-gim1uDZ8QkN15zIlMSHkWfc1AGo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Mar 2024 15:16:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Plant identified successfully\",\n    \"data\": {\n        \"plantInfo\": {\n            \"id\": \"fb1f0f0b31562030\",\n            \"name\": \"Dracaena trifasciata\",\n            \"probability\": 0.99,\n            \"details\": {\n                \"common_names\": [\n                    \"snake plant\",\n                    \"Saint George's sword\",\n                    \"mother-in-law's tongue\",\n                    \"viper's bowstring hemp\"\n                ],\n                \"url\": \"https://en.wikipedia.org/wiki/Dracaena_trifasciata\",\n                \"description\": {\n                    \"value\": \"Dracaena trifasciata is a species of flowering plant in the family Asparagaceae, native to tropical West Africa from Nigeria east to the Congo. It is most commonly known as the snake plant, Saint George's sword, mother-in-law's tongue, and viper's bowstring hemp, among other names. Until 2017, it was known under the synonym Sansevieria trifasciata.\",\n                    \"citation\": \"https://en.wikipedia.org/wiki/Dracaena_trifasciata\",\n                    \"license_name\": \"CC BY-SA 3.0\",\n                    \"license_url\": \"https://creativecommons.org/licenses/by-sa/3.0/\"\n                },\n                \"image\": {\n                    \"value\": \"https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikipedia/1c6/1c6e0d63a351532d3c391092a5f12dfb0fa236e5.jpg\",\n                    \"citation\": \"//commons.wikimedia.org/w/index.php?title=User:Mokkie&action=edit&redlink=1\",\n                    \"license_name\": \"CC BY-SA 3.0\",\n                    \"license_url\": \"https://creativecommons.org/licenses/by-sa/3.0/\"\n                },\n                \"edible_parts\": null,\n                \"watering\": {\n                    \"max\": 2,\n                    \"min\": 1\n                },\n                \"propagation_methods\": null,\n                \"language\": \"en\",\n                \"entity_id\": \"fb1f0f0b31562030\"\n            }\n        },\n        \"healthAssessment\": {\n            \"is_healthy\": {\n                \"binary\": true,\n                \"threshold\": 0.525,\n                \"probability\": 0.6023511290550232\n            },\n            \"is_plant\": {\n                \"probability\": 0.99999976,\n                \"threshold\": 0.5,\n                \"binary\": true\n            },\n            \"disease\": {\n                \"suggestions\": [\n                    {\n                        \"id\": \"53aac959aba8302b\",\n                        \"name\": \"mechanical damage\",\n                        \"probability\": 0.1597,\n                        \"details\": {\n                            \"local_name\": \"mechanical damage\",\n                            \"description\": \"Mechanical damage occurs when parts of the plant are disrupted by physical action, usually by tools or inappropriate handling. The wound can be an entry point for infectious disease or it can disrupt the water and nutrient transport.\",\n                            \"url\": \"https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/pests-and-problems/environmental/mechanical.aspx\",\n                            \"treatment\": {\n                                \"biological\": [\n                                    \"If possible remove the damaged parts of the plant. The injury can become an entry point for infectious disease.\",\n                                    \"For trees: if the bark is damaged, make the edges of the wound clean and leave it exposed to air to dry out.\"\n                                ],\n                                \"prevention\": [\n                                    \"For trees: create protection zones around the tree (e.g. by building a small fence) to avoid injuries to the trunk and roots by gardening equipment. Avoid using heavy equipment around trees.\"\n                                ]\n                            },\n                            \"classification\": [\n                                \"Abiotic\"\n                            ],\n                            \"common_names\": [\n                                \"mechanical injury\"\n                            ],\n                            \"cause\": null,\n                            \"language\": \"en\",\n                            \"entity_id\": \"53aac959aba8302b\"\n                        }\n                    },\n                    {\n                        \"id\": \"7f22438065988f95\",\n                        \"name\": \"Fungi\",\n                        \"probability\": 0.0481,\n                        \"redundant\": true,\n                        \"details\": {\n                            \"local_name\": \"Fungi\",\n                            \"description\": \"Fungi take energy from the plants on which they live, causing damage to the plant. Fungal infections are responsible for approximately two-thirds of infectious plant diseases and cause wilting, molding, rusts, scabs, rotted tissue, and other problems.\",\n                            \"url\": \"https://en.wikipedia.org/wiki/Fungus\",\n                            \"treatment\": {\n                                \"chemical\": [\n                                    \"If necessary, apply a fungicide. If you don' know the fungus species, choose fungicide based on the infected plant (e.g. house plant, garden plant, tree).\"\n                                ],\n                                \"biological\": [\n                                    \"If possible remove and destroy the infected parts of the plant. Burn it, toss it into the garbage, or bury it deeply. Do not compost.\",\n                                    \"Apply ecological products for plant protection (e.g. neem oil, baking soda, soap).\"\n                                ],\n                                \"prevention\": [\n                                    \"Use resistant species and cultivars as well as healthy, certified seeds and seedlings.\",\n                                    \"Ensure having good soil drainage to avoid overwatering.\",\n                                    \"Improve the air circulation around the plant (e.g. by pruning excess foliage or increasing the spacing between plants).\",\n                                    \"Avoid prolonged wetting of the leaves, which can be caused e.g. by overhead irrigation.\",\n                                    \"Rotate crops. Avoid planting sensitive crops in infested soil.\",\n                                    \"Disinfect tools, infected flower pots, and hands to avoid disease transmission.\"\n                                ]\n                            },\n                            \"classification\": [],\n                            \"common_names\": null,\n                            \"cause\": null,\n                            \"language\": \"en\",\n                            \"entity_id\": \"7f22438065988f95\"\n                        }\n                    },\n                    {\n                        \"id\": \"04deee7250f7e496\",\n                        \"name\": \"Colletotrichum\",\n                        \"probability\": 0.0186,\n                        \"details\": {\n                            \"local_name\": \"Colletotrichum\",\n                            \"description\": \"Colletotrichum causes a fungal disease called anthracnose, characteristic with leaf spots and blight.\",\n                            \"url\": \"https://en.wikipedia.org/wiki/Colletotrichum\",\n                            \"treatment\": {\n                                \"chemical\": [\n                                    \"If necessary, apply fungicide containing chlorothalonil (GHS05: Corrosive, GHS06: Toxic, GHS07: Harmful, GHS08: Health hazard, GHS09: Environmental hazard).\",\n                                    \"If necessary, apply fungicide containing captan (GHS05: Corrosive, GHS06: Toxic, GHS07: Harmful, GHS08: Health hazard, GHS09: Environmental hazard).\"\n                                ],\n                                \"biological\": [\n                                    \"If possible remove and destroy the infected plant. Burn it, toss it into the garbage, or bury it deeply. Do not compost.\",\n                                    \"For woody plants: rake the fallen leaves. Prune off and destroy infected parts of the plant.\",\n                                    \"Apply ecological products for plant protection (e.g. copper-based spray).\"\n                                ],\n                                \"prevention\": [\n                                    \"Use resistant species and cultivars as well as healthy, certified seeds and seedlings.\",\n                                    \"Prune the plant. Pruning will increase airflow and the amount of light.\",\n                                    \"Rotate crops. Avoid planting sensitive crops in infested soil.\",\n                                    \"Keep the moisture low, avoid prolonged wetting of the leaves (e.g. by overhead irrigation) and ensure good soil drainage.\",\n                                    \"Disinfect tools, infected flower pots, and hands to avoid disease transmission.\"\n                                ]\n                            },\n                            \"classification\": [\n                                \"Fungi\",\n                                \"Ascomycetes\",\n                                \"Pezizomycotina\",\n                                \"Sordariomycetes\",\n                                \"Glomerellaceae\"\n                            ],\n                            \"common_names\": [\n                                \"anthracnose\"\n                            ],\n                            \"cause\": null,\n                            \"language\": \"en\",\n                            \"entity_id\": \"04deee7250f7e496\"\n                        }\n                    }\n                ]\n            }\n        }\n    }\n}"
+				},
+				{
+					"name": "Recycle Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Api-AKey",
+								"value": "OXhL5S1drb9NVqmORt5HeCvdf5CA6dYDWiugGbo83QQ9TzTD9Y",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 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",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/Users/anhson/Documents/Projects/FunTree/server/uploads/Bottle Image 185072125.jpg"
+								},
+								{
+									"key": "lat",
+									"value": "21.0277644",
+									"type": "text"
+								},
+								{
+									"key": "lng",
+									"value": "105.8341598",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/plant/identification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"plant",
+								"identification"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "675"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a3-YCQ16EHM3tmLWvOw362VVQZsZvA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 01 Mar 2024 15:22:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"identified successfully\",\n    \"data\": {\n        \"response\": \" **How to recycle a plastic water bottle:**\\n\\n1. Rinse the bottle out with water.\\n2. Remove the cap and label.\\n3. Crush the bottle.\\n4. Place the bottle in a recycling bin.\\n\\n**How to convert a plastic water bottle into plant fertilizer:**\\n\\n1. Rinse the bottle out with water.\\n2. Remove the cap and label.\\n3. Cut the bottle in half.\\n4. Fill the bottom half of the bottle with water.\\n5. Add a few drops of liquid fertilizer to the water.\\n6. Place the top half of the bottle upside down into the bottom half.\\n7. The water will slowly drip into the soil, providing your plants with nutrients.\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
