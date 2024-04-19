@@ -1,4 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import dotenv from 'dotenv';
+dotenv.config();
 let geminiChat = null;
 try {
 	const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
