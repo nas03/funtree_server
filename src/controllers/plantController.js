@@ -153,9 +153,9 @@ export const getAllPlant = async (req, res) => {
 		const response = await Plant.getAll();
 		return res.status(200).json({
 			status: true,
-			response: response
+			response: response 
 		})
-	} catch (error) {
+	} catch (error) { 
 		console.log(error)
 		return res.status(500).json({
 			status: false,
